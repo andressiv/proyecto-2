@@ -1,1 +1,1 @@
-ECHO est  activado.
+var a = 1
