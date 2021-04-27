@@ -24,10 +24,19 @@ button {
     font-family: 'Work Sans', sans-serif;
 }
 
-#first-nav {
-    background: lightgray;
-    text-align: right;
+#first-nav .name-shop {
+    
+    /*text-align: left;*/
     padding: 12px;
+    background: lightcoral;
+    
+    
+}
+#first-nav-icon .buscador.svg {
+    width: 12px;
+    text-align: left;
+    
+    
 }
 
 #second-nav {
@@ -35,7 +44,7 @@ button {
     justify-content: space-between;
     align-items: center;
     padding: 12px;
-    background: white;
+   
 }
 
 
@@ -89,46 +98,13 @@ button {
     line-height: 32px;
 }
 
-.paginacion {
-    border: none;
-    padding: 12px 48px;
-    background: goldenrod;
-}
-
-.paginacion:hover {
-    font-weight: bold;
-    box-shadow: gray 3px 3px 6px;
-}
-
-.negrita {
-    font-weight: bold;
-}
-
-.tachado {
-    text-decoration: line-through;
-}
-
-.precio-final { 
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.descuento {
-    color: forestgreen;
-}
-
-.tachado,
-.precio-final,
-.descuento {
-    display: block;
-}
 
 #footer {
     height: 200px;
     background: lightgray;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     #banner {
         padding: 20px;
     }
