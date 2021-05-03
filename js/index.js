@@ -1,1 +1,5 @@
-var a = 1
+
+parent.addEventListener('click', function() {
+    parent.style.background = 'skyblue';
+    console.log('Click');
+});

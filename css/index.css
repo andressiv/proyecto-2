@@ -1,53 +1,94 @@
-* {
+*{
     margin: 0;
     padding: 0;
-}
-
-a {
-    text-decoration: none;
-    border: 1px solid white;
-    padding: 3px;
-}
-
-a:hover {
-    /* text-decoration: underline; */
-    border: 1px solid gray;
-    color: red;
-}
-
-/* a:visited {
-    color: #999;
-} */
-
-body,
-button {
     font-family: 'Work Sans', sans-serif;
 }
 
-#first-nav .name-shop {
-    
-    /*text-align: left;*/
-    padding: 12px;
-    background: lightcoral;
-    
-    
-}
-#first-nav-icon .buscador.svg {
-    width: 12px;
-    text-align: left;
-    
-    
-}
-
-#second-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px;
-   
-}
+#first-nav { 
+    background: rgb(22, 22, 22);
 
 
+}
+#first-nav img {
+    position: relative;
+    left: 80%;
+    top: 52px;
+    margin: 8px;
+}
+#first-nav h1 {
+    color: white;
+    height: 80px;
+    padding: 2px 70px;
+}
+.navbar {
+    
+    overflow: hidden;
+    background-color: rgb(22, 22, 22);
+    border: solid 1px rgb(80, 80, 80);
+    
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    font-weight: 200;
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a red background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: red;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(80, 80, 80);
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
 
 #banner {
     text-align: center;
@@ -56,31 +97,13 @@ button {
     color: white;
 }
 
-#banner h1,
-#banner button {
-    margin: 12px;
-}
-
-#banner button {
-    border: 1px solid lightblue;
-    border-radius: 3px;
-    padding: 12px 24px;
-}
-
-#banner h1 {
-    font-size: 60px;
-}
-
-#banner .overlay {
-    background: rgba(100,100,100,.4);
-}
-
 #items { 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 48px;
 }
+
 
 #items .item-product {
     width: 24%;
@@ -96,15 +119,10 @@ button {
 #items .item-product p {
     margin: 12px;
     line-height: 32px;
+
 }
 
-
-#footer {
-    height: 200px;
-    background: lightgray;
-}
-
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     #banner {
         padding: 20px;
     }
@@ -123,13 +141,7 @@ button {
 }
 
 @media screen and (max-width: 425px) {
-    #second-nav .logo {
-        height: 36px;
-    }
-
-    #second-nav .second-nav-menu {
-        position: relative;
-    }
+    
 
     #second-nav .second-nav-links {
         display: none;
@@ -150,9 +162,7 @@ button {
         text-align: right;
     }
 
-    #banner {
-        display: none;
-    }
+
 
     #items { 
         padding: 12px;
